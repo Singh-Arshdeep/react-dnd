@@ -10,36 +10,23 @@ import { Board } from './Board';
 let _columnId = 0;
 let _cardId = 0;
 
-// Creating cards
-const initialCards = Array.from({ length: 9 }).map(() => ({
+//Creating cards
+const initialCards = Array.from({ length: 9 }, () => ({
   id: ++_cardId,
   title: `Card ${_cardId}`,
 }));
 
-const initialColumns = ['TODO', 'Doing', 'Done'].map((title, i) => ({
+//Creating columns
+const initialColumns = Array.from(["Todo", "Doing", "Done"], (title, i) => ({
   id: _columnId++,
   title,
   cardIds: initialCards.slice(i * 3, i * 3 + 3).map(card => card.id),
-}));
+}))
 
 export default class Controller extends Component {
   state = {
     cards: initialCards,
     columns: initialColumns,
-  };
-
-  addColumn = _title => {
-    const title = _title.trim();
-    if (!title) return;
-
-    const newColumn = {
-      id: ++_columnId,
-      title,
-      cardIds: [],
-    };
-    this.setState(state => ({
-      columns: [...state.columns, newColumn],
-    }));
   };
 
   addCard = (columnId, _title) => {
@@ -84,7 +71,6 @@ export default class Controller extends Component {
         columns={this.state.columns}
         moveCard={this.moveCard}
         addCard={this.addCard}
-        addColumn={this.addColumn}
       />
       </DndProvider>
     );

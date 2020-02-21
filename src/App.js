@@ -1,7 +1,6 @@
 import React from 'react';
-import  Controller  from './board/Controller';
+import  Controller  from './playBoard1/Controller';
 import './App.css';
-
 
 export default function App () {
   return(
@@ -9,3 +8,5 @@ export default function App () {
   );
 }
 
+//npm install react-beautiful-dnd
+//npm i styled-components
