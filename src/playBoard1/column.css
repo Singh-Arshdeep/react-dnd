@@ -4,6 +4,8 @@
     height: 500px;
     margin: auto;
     margin-top: 50px;
+    float: left;
+    margin-left: 50px;
 }
 
 h3 {
@@ -14,4 +16,5 @@ h3 {
 .taskList {
     text-align: center;
     padding: 8px;
+    min-height: 500px;
 }

@@ -8,11 +8,21 @@ const initialData = {
     columns: {
         'column-1': {
             id: 'column-1',
-            title: 'To do',
+            title: 'All tasks',
             taskIds : ['task-1', 'task-2', 'task-3', 'task-4']
+        },
+        'column-2': {
+            id: 'column-2',
+            title: 'My tasks',
+            taskIds : [],
+        },
+        'column-3': {
+            id: 'column-3',
+            title: 'Archive',
+            taskIds : [],
         }
     },
-    columnOrder: ['column-1']
+    columnOrder: ['column-1', 'column-2', 'column-3']
 };
 
 export default initialData;

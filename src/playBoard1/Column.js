@@ -6,11 +6,19 @@ import { Droppable } from "react-beautiful-dnd";
 
 export default function Column(props) {
 
+    let handleAddClick = () => {
+        alert("Add an element");
+    }
+
     return (
         <div>
 
             <div className="outerDiv">
-                <h3>{props.column.title}</h3>
+                <h3>
+                    {props.column.title!=='Archive'
+                    ?<span onClick={handleAddClick} style={{cursor:"pointer"}}>+</span>
+                    :<span></span>} 
+                    {props.column.title}</h3>
                 <Droppable droppableId={props.column.id} direction="vertical">
                     {
                         (provided, snapshot) => (

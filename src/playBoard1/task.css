@@ -3,4 +3,9 @@
     padding: 8px;
     margin-bottom: 5px;
     background-color: white;
+    cursor: help;
+}
+
+div[data-rbd-drag-handle-context-id] {
+    cursor: pointer;
 }
