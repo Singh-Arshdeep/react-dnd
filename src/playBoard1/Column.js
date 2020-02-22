@@ -11,9 +11,9 @@ export default function Column(props) {
 
             <div className="outerDiv">
                 <h3>{props.column.title}</h3>
-                <Droppable droppableId={props.column.id}>
+                <Droppable droppableId={props.column.id} direction="vertical">
                     {
-                        (provided) => (
+                        (provided, snapshot) => (
                             <div className="taskList" ref={provided.innerRef}
                             {...provided.droppableProps}>
                                 {props.tasks.map((task,index) => <Task key={task.id} task={task} 
