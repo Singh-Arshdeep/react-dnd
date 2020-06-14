@@ -1,5 +1,15 @@
 import React from "react";
 import Kanban from "./kanban/Kanban";
+import ErrorPage from "./ErrorPage";
+
+//router
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  HashRouter,
+} from "react-router-dom";
 
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -28,44 +38,48 @@ export default function App() {
   const classes = useStyles();
 
   return (
-    <div>
-      <div className={classes.root}>
-        <AppBar position="static" style={{ height: "120%" }}>
-          <Toolbar>
-            <Typography variant="h6" className={classes.title}>
-              Kanban Task Manager
-            </Typography>
-            <Button color="inherit">
-              <a
-                href="https://www.taskiton.wmdd.ca/#/signup"
-                target="_blank"
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                  fontWeight: "bold",
-                  marginTop: "-10",
-                }}
-              >
-                Signup
-              </a>
-            </Button>
-          </Toolbar>
-        </AppBar>
+    <HashRouter>
+      <div>
+        <div className={classes.root}>
+          <AppBar position="static" style={{ height: "120%" }}>
+            <Toolbar>
+              <Typography variant="h6" className={classes.title}>
+                Kanban Task Manager
+              </Typography>
+              <Button color="inherit">
+                <a
+                  href="https://www.taskiton.wmdd.ca/#/signup"
+                  target="_blank"
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                    marginTop: "-10",
+                  }}
+                >
+                  Signup
+                </a>
+              </Button>
+            </Toolbar>
+          </AppBar>
+        </div>
+        <Chip
+          label="Signup to add your name in the list"
+          style={{
+            position: "absolute",
+            marginLeft: "12px",
+            fontWeight: "bold",
+            textAlign: "center",
+            margin: "auto",
+            width: "100%",
+          }}
+          color="secondary"
+        />
       </div>
-      <Chip
-        label="Signup to add your name in the list"
-        style={{
-          position: "absolute",
-          marginLeft: "12px",
-          fontWeight: "bold",
-          textAlign: "center",
-          margin: "auto",
-          width: "100%",
-        }}
-        color="secondary"
-      />
-      <Kanban />
-    </div>
+      {/* <Kanban /> */}
+      <Route exact path="/kanban" component={Kanban} />
+      <Route exact path="/" component={Kanban} />
+    </HashRouter>
   );
 }
 
