@@ -1,0 +1,44 @@
+.colDiv {
+    /* border: solid #9e9e9e;  */
+    width: 30%;
+    float: left;
+    margin: auto;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    background-color: #ebecf0;
+    border-radius: 2%;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+@media only screen and (max-width: 600px) {
+    .colDiv {
+        width: 95%;
+        height: auto;
+        float: left;
+        margin: auto;
+        margin-left: 2.5%;
+        margin-top: 5vh;
+    }
+}
+
+.colTitle {
+    width: 100%;
+    text-align: center;
+    margin: 12px 0 10px 0;
+    font-weight: 600;
+}
+
+.taskList {
+    text-align: center;
+    max-height: 80%;
+    height: 78vh;
+    overflow: auto;
+}
+
+@media only screen and (max-width:600px) {
+    .taskList {
+        height: auto;
+        min-height: 80px;
+        overflow: auto;
+    }
+}

@@ -1,0 +1,32 @@
+.item {
+    padding: 15px;
+    width: 82%;
+    margin: auto;
+    margin-bottom: 8px;
+    background-color: white;
+    font-size: 1em;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    box-shadow: 2px 3px 5px #888888;
+    border-radius: 5%;
+}
+
+.taskName {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+@media only screen  and (max-width:600px) {
+
+    .item {
+        padding: 8px;
+        font-size: 1.2em;
+        border-radius: 2%;
+    }
+}
+
+div[data-rbd-drag-handle-context-id] {
+    cursor: pointer;
+}
