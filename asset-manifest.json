@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-dnd/static/css/main.968b2160.chunk.css",
-    "main.js": "/react-dnd/static/js/main.718ec111.chunk.js",
-    "main.js.map": "/react-dnd/static/js/main.718ec111.chunk.js.map",
+    "main.js": "/react-dnd/static/js/main.bfa7fef6.chunk.js",
+    "main.js.map": "/react-dnd/static/js/main.bfa7fef6.chunk.js.map",
     "runtime-main.js": "/react-dnd/static/js/runtime-main.462d641a.js",
     "runtime-main.js.map": "/react-dnd/static/js/runtime-main.462d641a.js.map",
     "static/js/2.e6a9a97c.chunk.js": "/react-dnd/static/js/2.e6a9a97c.chunk.js",
     "static/js/2.e6a9a97c.chunk.js.map": "/react-dnd/static/js/2.e6a9a97c.chunk.js.map",
     "index.html": "/react-dnd/index.html",
-    "precache-manifest.4c7278dde0ee4505d754d9e93ff1d695.js": "/react-dnd/precache-manifest.4c7278dde0ee4505d754d9e93ff1d695.js",
+    "precache-manifest.77caf85edcf8fdf0dbce455b9fd3b42d.js": "/react-dnd/precache-manifest.77caf85edcf8fdf0dbce455b9fd3b42d.js",
     "service-worker.js": "/react-dnd/service-worker.js",
     "static/css/main.968b2160.chunk.css.map": "/react-dnd/static/css/main.968b2160.chunk.css.map",
     "static/js/2.e6a9a97c.chunk.js.LICENSE.txt": "/react-dnd/static/js/2.e6a9a97c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.462d641a.js",
     "static/js/2.e6a9a97c.chunk.js",
     "static/css/main.968b2160.chunk.css",
-    "static/js/main.718ec111.chunk.js"
+    "static/js/main.bfa7fef6.chunk.js"
   ]
 }
