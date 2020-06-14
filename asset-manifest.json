@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/css/main.968b2160.chunk.css",
+    "main.js": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/js/main.3b889efa.chunk.js",
+    "main.js.map": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/js/main.3b889efa.chunk.js.map",
+    "runtime-main.js": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/js/runtime-main.463c0642.js",
+    "runtime-main.js.map": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/js/runtime-main.463c0642.js.map",
+    "static/js/2.31997549.chunk.js": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/js/2.31997549.chunk.js",
+    "static/js/2.31997549.chunk.js.map": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/js/2.31997549.chunk.js.map",
+    "index.html": "/git@github.com:Singh-Arshdeep/react-dnd.git/index.html",
+    "precache-manifest.1db6325d856c1953349775fe93b88b01.js": "/git@github.com:Singh-Arshdeep/react-dnd.git/precache-manifest.1db6325d856c1953349775fe93b88b01.js",
+    "service-worker.js": "/git@github.com:Singh-Arshdeep/react-dnd.git/service-worker.js",
+    "static/css/main.968b2160.chunk.css.map": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/css/main.968b2160.chunk.css.map",
+    "static/js/2.31997549.chunk.js.LICENSE.txt": "/git@github.com:Singh-Arshdeep/react-dnd.git/static/js/2.31997549.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.463c0642.js",
+    "static/js/2.31997549.chunk.js",
+    "static/css/main.968b2160.chunk.css",
+    "static/js/main.3b889efa.chunk.js"
+  ]
+}
